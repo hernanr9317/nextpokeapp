@@ -64,7 +64,7 @@ const PokemonByNamePage: NextPage<Props> = ({ pokemon }) => {
               </Text>
 
               <Button
-                className="buttonFav"
+                className="buttonFav" 
                 color="gradient"
                 ghost={!isInFavorites}
                 onClick={onToggleFavorite}

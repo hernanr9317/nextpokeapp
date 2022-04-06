@@ -64,7 +64,8 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
                 {pokemon.name}
               </Text>
 
-              <Button 
+              <Button
+                className="buttonFav"   
                 color="gradient" 
                 ghost={ !isInFavorites } 
                 onClick={onToggleFavorite}
@@ -73,7 +74,7 @@ const PokemonPage: NextPage<Props> = ({ pokemon }) => {
               </Button>
             </Card.Header>
 
-            <Card.Body>
+            <Card.Body className="spritesText">
               <Text size={30}>Sprites</Text>
 
               <Container direction="row" display="flex" gap={0}>
